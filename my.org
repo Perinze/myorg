@@ -26,16 +26,6 @@
 ** TODO mmap
 
 
-* qt (for electronic contest)
-
-** TODO make example notepad
-** TODO understand signal and slot
-** TODO bluetooth ploting [0/3]
-
-  - [ ] bluetooth
-  - [ ] plot
-  - [ ] organization
-
 * misc
 
 ** TODO what is D-Bus
