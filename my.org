@@ -1,0 +1,42 @@
+
+* xv6 lab
+
+** DONE utilities
+** DONE system calls
+** DONE page tables
+** DONE traps
+** TODO copy on-write [1/5]
+
+  - [X] pass tests
+  - [ ] compare your failed code to the passed code, find differences
+  - [ ] check if lock is necessary
+  - [ ] check if cow bit is necessary for unwritable pages
+  - [ ] find reason for memory leak
+
+- Note taken on [2022-07-25 Mon 06:38] \\
+  for variables in global scope, lock is needed.
+
+- Note taken on [2022-07-25 Mon 06:48] \\
+  garbage collector may be slow, but it really makes life easier.
+
+** TODO multithreading
+** TODO network driver
+** TODO lock
+** TODO file system
+** TODO mmap
+
+
+* qt (for electronic contest)
+
+** TODO make example notepad
+** TODO understand signal and slot
+** TODO bluetooth ploting [0/3]
+
+  - [ ] bluetooth
+  - [ ] plot
+  - [ ] organization
+
+* misc
+
+** TODO what is D-Bus
+** TODO The Linux Kernel Module Programming Guide (in Chrome bookmark/technic)
