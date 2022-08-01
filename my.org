@@ -5,10 +5,10 @@
 ** DONE system calls
 ** DONE page tables
 ** DONE traps
-** TODO copy on-write [1/5]
+** TODO copy on-write [2/5]
 
   - [X] pass tests
-  - [ ] compare your failed code to the passed code, find differences
+  - [X] compare your failed code to the passed code, find differences
   - [ ] check if lock is necessary
   - [ ] check if cow bit is necessary for unwritable pages
   - [ ] find reason for memory leak
@@ -18,6 +18,34 @@
 
 - Note taken on [2022-07-25 Mon 06:48] \\
   garbage collector may be slow, but it really makes life easier.
+
+- Note taken on [2022-08-01 Mon 23:19] \\
+  diff: spinlock is added to each page's reference count
+
+- Note taken on [2022-08-02 Tue 01:00] \\
+  diff: kalloc initialize ref count as 1
+  kfree decrease ref count and free the page if count is 0
+
+- Note taken on [2022-08-01 Mon 23:42] \\
+  diff: add helper function to handle ref count with lock
+
+- Note taken on [2022-08-02 Tue 00:28] \\
+  diff: add helper function cow_check and cow_copy
+  cow_copy calls cow_check to determine whether PTE's cow bit is set
+  after that cow_copy simply alloc memory and do mapping
+
+- Note taken on [2022-08-02 Tue 00:48] \\
+  diff: these two helpers is well designed
+  they are abstracted as functions whose parameters are pagetable and va
+  one could tell whether the va refer to a cow page
+  while the other make one copy of the page and return pa of the new
+
+- Note taken on [2022-08-02 Tue 00:53] \\
+  diff: uvmcopy just add_ref after map new va to the same pa
+
+- Note taken on [2022-08-02 Tue 01:03] \\
+  usertrap just call cow_copy if there is a page fault
+  copy_out call cow_check and then call cow_copy if it's a cow page
 
 ** TODO multithreading
 ** TODO network driver
