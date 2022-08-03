@@ -1,4 +1,40 @@
 
+* TODO luggage [19/23]
+
+  - [X] nucleic acid negative proof
+  - [X] id card
+  - [ ] GTX 1660 SUPER
+  - [X] all your git repo not pushed
+  - [X] create server
+  - [ ] new SSD with Linux in desktop
+  - [X] rescue flash disk
+  - [ ] keyboard
+  - [X] mouse
+  - [X] 7506
+  - [X] keyring
+  - [ ] PD charger
+  - [X] aime card
+  - [X] airdots
+  - [X] driver license
+  - [X] fufu (new or old)
+  - [X] cloth
+  - [X] monitor (optional)
+  - [X] microphone
+  - [X] tablet
+  - [X] phone stand
+  - [X] laptop stand
+  - [X] ipad mini 2 (optional)
+
+* create above and beyond
+
+** DONE find copper
+
+** TODO add belt to transport ores easy
+
+** DONE make process of andesite alloy
+
+** DONE light around
+
 * xv6 lab
 
 ** DONE utilities
