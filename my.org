@@ -1,29 +1,27 @@
 
-* TODO luggage [19/23]
+* DONE luggage [1/22]
 
-  - [X] nucleic acid negative proof
-  - [X] id card
+  - [ ] nucleic acid negative proof
+  - [ ] id card
   - [ ] GTX 1660 SUPER
-  - [X] all your git repo not pushed
-  - [X] create server
+  - [ ] all your git repo not pushed
+  - [ ] create server
   - [ ] new SSD with Linux in desktop
-  - [X] rescue flash disk
+  - [ ] rescue flash disk
   - [ ] keyboard
-  - [X] mouse
-  - [X] 7506
-  - [X] keyring
+  - [ ] mouse
+  - [ ] 7506
+  - [ ] keyring
   - [ ] PD charger
-  - [X] aime card
-  - [X] airdots
-  - [X] driver license
-  - [X] fufu (new or old)
-  - [X] cloth
-  - [X] monitor (optional)
-  - [X] microphone
-  - [X] tablet
-  - [X] phone stand
-  - [X] laptop stand
-  - [X] ipad mini 2 (optional)
+  - [ ] aime card
+  - [ ] airdots
+  - [ ] driver license
+  - [ ] fufu (new or old)
+  - [ ] cloth
+  - [ ] microphone
+  - [ ] tablet
+  - [ ] phone stand
+  - [ ] laptop stand
 
 * create above and beyond
 
@@ -41,12 +39,12 @@
 ** DONE system calls
 ** DONE page tables
 ** DONE traps
-** TODO copy on-write [2/5]
+** TODO copy on-write [4/5]
 
   - [X] pass tests
   - [X] compare your failed code to the passed code, find differences
-  - [ ] check if lock is necessary
-  - [ ] check if cow bit is necessary for unwritable pages
+  - [X] check if lock is necessary (all tests passed without lock)
+  - [X] check if cow bit is necessary for unwritable pages (unpassed)
   - [ ] find reason for memory leak
 
 - Note taken on [2022-07-25 Mon 06:38] \\
@@ -82,6 +80,23 @@
 - Note taken on [2022-08-02 Tue 01:03] \\
   usertrap just call cow_copy if there is a page fault
   copy_out call cow_check and then call cow_copy if it's a cow page
+
+- Note taken on [2022-08-07 Sun 07:25] \\
+  all tests passed when lock removed
+
+- Note taken on [2022-08-07 Sun 08:21] \\
+  $ cowtest
+  simple: ok
+  simple: ok
+  three: ok
+  three: ok
+  three: ok
+  file: eeerrrrrorroor:: rr eraeda df af:a irleeida
+  dl efdai
+  led
+  $ error: read the wrong value
+  
+  Copying writable pages doesn't make sense for unknown reason
 
 ** TODO multithreading
 ** TODO network driver
