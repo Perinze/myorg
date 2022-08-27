@@ -1,91 +1,19 @@
 
+* run
+
+** IELTS
+** re-take course
+
 * token
 
-** TODO tutorial for wut beginners
+** TODO tutorial for wut beginners [1/2]
 
-*** computer basic
-
-**** file
-
-***** text
-***** binary
-
-**** operation system
-
-***** windows
-***** linux
-***** macos
-***** difference
-
-**** programming language
-
-***** C
-***** java
-***** python
-***** difference and which to learn
-
-*** the C programming language
-
-**** how to compile
-
-***** editor & compiler
-***** IDE
-
-**** basic
-
-***** data types
-***** operation
-***** input & output
-***** function
-***** process control
-***** library
-
-**** pointer & memory
-
-***** memory module
-***** array & pointer
-***** stack & heap memory
-***** struct
-
-**** oop
-
-***** oop is a way of thinking
-***** oop by struct and function
-
-**** project
-
-***** header file & source file
-***** organize multiple files
-***** preprocess, compile and link
-***** makefile
-
-*** debug
-
-**** log
-
-***** printf
-
-**** debugger
-
-***** gdb
-
-*** git
-
-**** version control
-**** add & commit
-**** pull & push
-**** branch & merge
-**** tag
-**** mechanism
-
-*** what to do next
-
-**** data structure
-**** csapp or 6.001 & 6.004
-**** other languages
+  - [X] headline
+  - [ ] preparation
 
 * misc
 
+** TODO setup mutt
 ** TODO learn qemu
 ** TODO learn clash
 
@@ -160,7 +88,7 @@
   
   Copying writable pages doesn't make sense for unknown reason
 
-** TODO multithreading
+** DONE multithreading
 ** TODO network driver
 ** TODO lock
 ** TODO file system
@@ -190,13 +118,8 @@
   - [ ] tablet
   - [ ] phone stand
   - [ ] laptop stand
+  - [ ] a bottle
 
 * create above and beyond
 
-** DONE find copper
-
 ** TODO add belt to transport ores easy
-
-** DONE make process of andesite alloy
-
-** DONE light around
